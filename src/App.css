@@ -1,38 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .App {
+  /* padding: 2rem 5rem; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  margin: 2rem 5rem;
+}
+.nav-list{
+  display: flex;
+  margin-left: 4rem;
+}
+.nav-link{
+  list-style-type: none;
+  margin-left:  2rem;
+}
+.link-nav{
+  text-decoration: none;
+  color: #000;
+}
+footer{
+  background-color: 
+  hsla(225, 73%, 10%, 1);
+  text-align: center;
+color: #fff;
+padding: 5rem 2rem;
+}
+
+.linkedin-social, .twitter-social{
+  border: 1px solid #2351DC;
+  border-radius:  50%;
+  padding: .5rem;
+  color: #2351DC;
+  margin-left: 1rem;
+}
+.footer-icon{
+  border-radius:  50%;
+  padding: .5rem;
+  color: #fff;
+  margin: 1rem 1rem 1rem 0;
+  border: 1px solid #fff;
+  
+}
+.contact-get{
+  padding: 2rem;
+  width: 100%;
+}
+
+.Email{
+  display: flex;
+  padding: 1rem 0;
+}
+.contact-p{
+  padding: 1rem 0;
+}
+.contact-msg{
+  background-color: #2351DC;
+  padding: 5rem;
+  width: 100%;
+}
+.Email-p{
+  color: #737373;
+  font-size: 12px;
+}
+.contact-msg h3{
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact-msg h2{
+  color: #fff;
+}
+input{
+  background-color: none;
+  width: 70%;
+  padding: .5rem;
+  margin: 1rem 0;
+  border: 0.6px solid #FFFFFF
+}
+textarea{
+  border: 0.6px solid #FFFFFF;
+  width: 70%; 
+  padding: .5rem;
+}
+.contact-btn{
+  color: #2351DC;
+  border: none;
+  padding: .7rem 1.5rem;
+  border-radius: 7px;
+  background-color: #fff;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+.envelope, .phone{
+  margin: .5rem .5rem 0 0;
+}
+.recommendation{
+  display: flex;
+  
+}
+.recommendation-block img{
+  width: 20%;
+border-radius: 50%;
+
+}
+.recommendation-block{
+align-content: center;
+margin: 2rem;
+}
+.recommendation-block p{
+  font-size: 14px;
+  width: 50%;
+}
+.testimonies-title{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hi{
+  color:#2351DC;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.introduction{
+  font-weight: 700;
+  color:#2351DC;
+  font-size: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 72px;
+  padding-bottom: 1rem;
+  width: 70%;
+}
+.intro{
+  width: 100%;
+  padding: 2rem 5rem;
+}
+.intro-flex{
   display: flex;
-  flex-direction: column;
+}
+.intro-flex img{
+  width: 617px;
+  height: 618px;
+}
+.about-intro{
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #F6F8FE;
+}
+.about-intro p{
+  color: #4D4D4D;
+}
+.html-icon{
+  color: #2351DC;
+  background-color: #EDF1FC;
+  padding: .5rem;
+  border-radius: 5px;
+}
+.skill-logo{
+  display: flex;
+  align-content: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-list li{
+  list-style-type: none;
+  margin-left: 1rem;
+}
+.skills{
+  padding: 2rem;
+}
+.skills p{
+  padding-bottom: 3rem;
+  color:#737373;
+}
+.service-block p{
+color: #4D4D4D;
+}
+.services{
+  margin: 2rem;
+}
+.service-block{
+  margin-top: 3rem;
+}
+.project{
+  margin: 2rem;
+}
+.project-img img{
+  margin: 2rem;
+
+}
+.img-project{
+  animation: wave  ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+  position: relative;
+
+}
+.img-project:hover{
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  background-color: #fff;
+  animation-play-state: paused;
+  cursor: pointer;
+  
+}
+@keyframes wave {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+@media screen and (min-width: 600px) {
+  .contact{
+    display: flex;
+  }
+  .contact-get{
+    padding: 5rem;
+  }
+  .contact-p{
+    width: 70%;
+  }
+  .testimonies{
+    display: flex;
+  }
+  .testimonies-title{
+    background-color: #2351DC;
+    color: #fff;
+    width: 564px;
+    height: 700px;
+    display: flex;
+    align-content: center;
+  }
+  .testimonies-title h1{
+    padding:10rem 5rem 5rem 0;
+    line-height: 63px;
+  }
+  .rec{
+    width: 60%;
+    padding: 2rem 3rem;
+  }
+  .recommendation-block p{
+    font-size: 14px;
+    width: 100%;
+  }
+  .recommendation-block{
+    text-align: center;
+  }
+  .about-intro p{
+    width: 65%;
+    padding-left: 30rem;
+    padding-bottom: 2rem;
+  }
+  .skills{
+    padding: 5rem;
+  }
+  .service-page{
+    display: flex;
+ 
+  }
+  .services{
+    margin: 2rem 5rem;
+  }
+  .service-block{
+    margin-right: 2rem;
+    width: 33%
+  }
+  .project{
+    margin: 2rem 5rem;
+  }
+  .project-img{
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .project-img img{
+    width: 600px;
+object-fit: cover;
+    margin: 2rem;
+    
+  }
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
