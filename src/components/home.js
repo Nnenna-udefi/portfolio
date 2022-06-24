@@ -6,14 +6,25 @@ import Services from './services';
 import Contact from './contact';
 import SocialFollow from './SocialFollow';
 import Amy from '../images/Amy.jpg';
-import Profile from '../images/profile.JPG';
+// import Profile from '../images/profile.JPG';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import ReactSwitch from "react-switch";
+import { useState } from 'react';
+import { createContext } from 'react';
 
 
-function home() {
+export const ThemeContext = createContext(null);
+
+function Home() {
+    const [theme, setTheme] = useState('dark');
+  const toggleTheme = () => {
+    //if the currrent theme is light i want to set it to dark, then if its light set it to dark 
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <div>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+    <div id = {theme}>
         <div className='Navbar'>
             <div>
                 <h1>Nnenna Udefi.</h1>
@@ -35,6 +46,10 @@ function home() {
             <div>
             <SocialFollow />
             </div>
+            <div className='switch'>
+                <label>{ theme === "light" ? "Light Mode" : "Dark Mode" }</label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'}/>
+            </div>
         </div>
 
         <div className='intro-flex'>
@@ -45,7 +60,7 @@ function home() {
                 <SocialFollow />
             </div>
             <div>
-            <img src={Profile} alt='' />
+            {/* <img src={Profile} alt='' /> */}
             </div>
             
         </div>
@@ -100,7 +115,8 @@ function home() {
         </footer>
         
         </div>
+        </ThemeContext.Provider>
   )
 }
 
-export default home
+export default Home
