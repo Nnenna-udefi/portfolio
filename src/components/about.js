@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialFollow from './SocialFollow';
+// import SocialFollow from './SocialFollow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3Alt, faHtml5, faJava, faWindows, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import ProgressBar from './ProgressBar';
@@ -17,7 +17,7 @@ function about() {
       <div className='about-intro'>
       <h1> About Me</h1>
       <p> Nnenna Udefi is a passionate and goal driven Techpreneur whose interest is in using technology to build solutions to solve real world problems.</p>
-      <SocialFollow />
+      {/* <SocialFollow /> */}
       </div>
 
 
@@ -26,6 +26,7 @@ function about() {
         <h1>My Skills</h1>
         <p>Here are a few skills I possess</p>
         <ul className='skill-list'>
+          <div>
           <div className='skill-logo'>
             <FontAwesomeIcon icon = {faHtml5} size='2x' className='html-icon'/>
             <li>HTML</li>
@@ -55,7 +56,10 @@ function about() {
             </div>
             
           </div>
+          </div>
 
+
+      <div>
           <div className='skill-logo'>
             <FontAwesomeIcon icon = {faWordpress} size='2x' className='html-icon'/>
             <li>Wordpress</li>
@@ -75,7 +79,7 @@ function about() {
             </div>
             
           </div>
-          
+          </div> 
         </ul>
       </div>
     </div>

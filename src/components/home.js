@@ -6,9 +6,8 @@ import Services from './services';
 import Contact from './contact';
 import SocialFollow from './SocialFollow';
 import Amy from '../images/Amy.jpg';
-// import Profile from '../images/profile.JPG';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactSwitch from "react-switch";
 import { useState } from 'react';
 import { createContext } from 'react';
@@ -27,7 +26,7 @@ function Home() {
     <div id = {theme}>
         <div className='Navbar'>
             <div>
-                <h1>Nnenna Udefi.</h1>
+                <h1 className='logo'>Nnenna Udefi.</h1>
             </div>
             <ul className='nav-list'>
                 <Link to = '#about' smooth className='link-nav'>
@@ -44,7 +43,7 @@ function Home() {
             </ul>
 
             <div>
-            <SocialFollow />
+            {/* <SocialFollow /> */}
             </div>
             <div className='switch'>
                 <label>{ theme === "light" ? "Light Mode" : "Dark Mode" }</label>
@@ -57,11 +56,12 @@ function Home() {
                 <p className='hi'>Hi There</p>
                 <p className='introduction'>I Am Nnenna Udefi</p>
                 <p className='title'> A Top-Notch Front-End Developer</p>
+                <div>
                 <SocialFollow />
+                </div>
+                
             </div>
-            <div>
-            {/* <img src={Profile} alt='' /> */}
-            </div>
+           
             
         </div>
         <About />
@@ -78,24 +78,24 @@ function Home() {
                 <div className='recommendation-block'>
                     <img src={Amy} alt='' />
                     <h3>Osuamkpe Amy</h3>
-                    <p>Seyi gets things done. He’s very passionate about what he does and he’s always fun to be with.</p>
+                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
                 </div>
                 <div className='recommendation-block'>
                     <img src={Amy} alt='' />
                     <h3>Osuamkpe Amy</h3>
-                    <p>Seyi gets things done. He’s very passionate about what he does and he’s always fun to be with.</p>
+                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
                 </div>
             </div>
             <div className='recommendation'>
                 <div className='recommendation-block'>
                     <img src={Amy} alt='' />
                     <h3>Osuamkpe Amy</h3>
-                    <p>Seyi gets things done. He’s very passionate about what he does and he’s always fun to be with.</p>
+                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
                 </div>
                 <div className='recommendation-block'>
                     <img src={Amy} alt='' />
                     <h3>Osuamkpe Amy</h3>
-                    <p>Seyi gets things done. He’s very passionate about what he does and he’s always fun to be with.</p>
+                    <p>Nnenna gets things done. She is very passionate about what he does and She's always fun to be with.</p>
                 </div>
             </div>
             </div>
@@ -111,6 +111,9 @@ function Home() {
             <a href="https://twitter.com/nnennaudefi" >
                 <FontAwesomeIcon icon = {faTwitter} size='1.5x' className='footer-icon'/>
             </a>
+            <a href="https://github.com/Nnennaudefi" >
+          <FontAwesomeIcon icon={faGithub} size="1.5x" className="footer-icon"/>
+      </a>
             <p> CopyRight @ 2022 | All rights reserved</p>
         </footer>
         
