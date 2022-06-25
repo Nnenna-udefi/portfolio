@@ -111,7 +111,7 @@ function Home() {
             <a href="https://twitter.com/nnennaudefi" >
                 <FontAwesomeIcon icon = {faTwitter} size='1.5x' className='footer-icon'/>
             </a>
-            <a href="https://github.com/Nnennaudefi" >
+            <a href="https://github.com/Nnenna-udefi" >
           <FontAwesomeIcon icon={faGithub} size="1.5x" className="footer-icon"/>
       </a>
             <p> CopyRight @ 2022 | All rights reserved</p>
