@@ -33,7 +33,7 @@ label{
   justify-content: space-between;
   align-content: center;
   text-align: center;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1rem;
 }
 .nav-list{
   display: none;
@@ -42,6 +42,7 @@ label{
 .nav-link{
   list-style-type: none;
   margin-left:  2rem;
+  margin-top: .5rem;
 }
 .link-nav:hover{
   color:#2351DC;
@@ -182,10 +183,13 @@ margin: 2rem;
 #dark .title, .about-intro, .skills, .project, .rec, .contact, .services{
   color: #fff;
 }
+.title, .about-intro, .skills, .project, .rec, .contact, .services{
+  color: #000;
+}
 
 .intro{
   width: 100%;
-  padding: 2rem 5rem;
+  padding: 2rem 0.5rem;
 }
 .intro-flex{
    text-align: center;
@@ -257,7 +261,7 @@ color: #4D4D4D;
   text-transform: uppercase;
   color:rgb(226, 7, 7);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1rem;
   align-items: center;
   text-align: center;
   display: none;
@@ -301,11 +305,20 @@ color: #4D4D4D;
   .contact-get{
     padding: 5rem;
   }
+  .intro{
+    padding: 2rem 5rem;
+  }
   .Navbar{
     margin: 2rem 5rem;
   }
   .nav-list{
     display: flex;
+  }
+  .lin{
+    font-size: 3rem;
+  }
+  .logo{
+    font-size: 2rem;
   }
   .contact-p{
     width: 70%;
@@ -336,17 +349,11 @@ color: #4D4D4D;
   .recommendation-block{
     text-align: center;
   }
-  .recommendation-block p{
-    /* width: 50%; */
-  }
+ 
   .recommendation{
     display: flex;
   }
-  .about-intro p{
-    /* width: 65%;
-    padding-left: 30rem;
-    padding-bottom: 2rem; */
-  }
+ 
   .title{
     font-size: 3rem;
   }
@@ -371,7 +378,7 @@ color: #4D4D4D;
     display: flex;
   }
   .project-img img{
-    width: 600px;
+    width: 60%;
 object-fit: cover;
     margin: 2rem;
     
