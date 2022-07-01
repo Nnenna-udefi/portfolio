@@ -179,14 +179,36 @@ margin: 2rem;
   font-weight: 800;
   line-height: 72px;
   padding-bottom: 1rem;
-}
-#dark .title, .about-intro, .skills, .project, .rec, .contact, .services{
   color: #fff;
 }
-.title, .about-intro, .skills, .project, .rec, .contact, .services{
-  color: #000;
+#dark .title{
+  color: #fff;
+}
+#dark .about-intro{
+  color: #fff;
 }
 
+#dark .skills{
+  color: #fff;
+}
+#dark .project{
+  color: #fff;
+}
+#dark .rec{
+  color: #fff;
+}
+#dark .contact{
+  color: #fff;
+}
+#dark .services{
+  color: #fff;
+}
+.rec{
+  color: #000;
+}
+.contact{
+  color: #000;
+}
 .intro{
   width: 100%;
   padding: 2rem 0.5rem;
@@ -199,6 +221,7 @@ margin: 2rem;
   text-align: center;
   padding: 5rem 2rem;
   background-color: #F6F8FE;
+  color:#000;
 }
 #dark .about-intro {
   background-color: rgb(61, 60, 60);
@@ -229,6 +252,7 @@ margin: 2rem;
 }
 .skills{
   padding: 1.5rem;
+  color: #000;
 }
 .skills p{
   padding-bottom: 3rem;
@@ -239,12 +263,14 @@ color: #4D4D4D;
 }
 .services{
   margin: 2rem;
+  color: #000;
 }
 .service-block{
   margin-top: 3rem;
 }
 .project{
   margin: 2rem;
+  color: #000;
 }
 .project-img img{
   margin: 2rem;
