@@ -5,7 +5,7 @@ import Project from './project';
 import Services from './services';
 import Contact from './contact';
 import SocialFollow from './SocialFollow';
-import Amy from '../images/Amy.jpg';
+// import Amy from '../images/Amy.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactSwitch from "react-switch";
@@ -16,7 +16,7 @@ import { createContext } from 'react';
 export const ThemeContext = createContext(null);
 
 function Home() {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     //if the currrent theme is light i want to set it to dark, then if its light set it to dark 
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -67,7 +67,7 @@ function Home() {
         <About />
         <Services />
         <Project />
-        <div className='testimonies'>
+        {/* <div className='testimonies'>
             <div className='testimonies-title'>
                 <h1>Testimonies & Recommendations</h1>
             </div>
@@ -98,8 +98,8 @@ function Home() {
                     <p>Nnenna gets things done. She is very passionate about what he does and She's always fun to be with.</p>
                 </div>
             </div>
-            </div>
-        </div>
+            </div> */}
+        {/* </div> */}
 
         <Contact />
 

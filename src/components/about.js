@@ -12,17 +12,35 @@ import ProgressBar from './ProgressBar';
 
 function about() {
   
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+
+window.addEventListener("scroll", about);
+
   return (
     <div id='about'>
       <div className='about-intro'>
-      <h1> About Me</h1>
-      <p> Nnenna Udefi is a passionate and goal driven Techpreneur whose interest is in using technology to build solutions to solve real world problems.</p>
-      {/* <SocialFollow /> */}
+
+      
+      <p>I'm a self-taught Front End Developer from Nigeria.</p>
+      <p>A passionate and goal driven Techpreneur whose interest is in using technology to build solutions to solve real world problems.</p>
+      <p>I love building websites with responsive designs which also focuses on accesibility/</p>
       </div>
 
 
 
-    <div className='skills'>
+    <div className='skills reveal'>
         <h1>My Skills</h1>
         <p>Here are a few skills I possess</p>
         <ul className='skill-list'>

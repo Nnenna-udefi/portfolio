@@ -4,8 +4,23 @@ import Responsive from '../images/responsive.png';
 import Web from '../images/web-dev.png'
 
 function services() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+  window.addEventListener("scroll", services);
+
   return (
-    <div id='services' className='services'>
+    <div id='services' className='services reveal'>
       <h1>Services I Render</h1>
       <div className='service-page'>
         <div className='service-block'>

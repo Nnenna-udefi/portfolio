@@ -4,16 +4,19 @@ import React from 'react'
         const {bgcolor, completed } = props;
     
         const containerStyles = {
-          height: 20,
+          height: 30,
           width: '100%',
           backgroundColor: '#D3DCF8',
-          margin: 50
+          margin: 50,
+          borderRadius: 5
+
         }
         const fillerStyles = {
           height: '100%',
           width: `${completed}%`,
           backgroundColor: bgcolor,
-          textAlign: 'right'
+          textAlign: 'right',
+          borderRadius: 5
         }
         const labelStyles = {
           padding: 5,

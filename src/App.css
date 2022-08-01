@@ -232,6 +232,8 @@ margin: 2rem;
 }
 .about-intro p{
   color: #4D4D4D;
+  margin-top: 1rem;
+ 
 }
 .html-icon{
   color: #2351DC;
@@ -262,63 +264,56 @@ margin: 2rem;
 color: #4D4D4D;
 }
 .services{
-  margin: 2rem;
+  margin: 3rem;
   color: #000;
 }
 .service-block{
   margin-top: 3rem;
 }
 .project{
-  margin: 2rem;
+  margin: 4rem 2rem;
   color: #000;
 }
-.project-img img{
-  margin: 2rem;
-
-}
-
-.img-project:hover  .lin{
-  opacity: 1.0;
-  justify-content: center;
-  display: block
-}
-.lin{
-  text-decoration: none;
-  text-transform: uppercase;
-  color:rgb(226, 7, 7);
-  font-weight: 700;
-  font-size: 1rem;
-  align-items: center;
-  text-align: center;
-  display: none;
-  position: absolute;
-  bottom: 1px;
-  font-style: italic;
-  
-  
-}
-.img-project{
-  /* animation: wave  ease-in-out 0.5s infinite alternate;
-  transform-origin: center -36px; */
-  position: relative;
-
-}
-.img-project:hover{
-  transition: opacity 1s ease-in-out;
-  opacity: 0.7;
-  background-color: #fff;
-  animation-play-state: paused;
-  border: 4px solid black;
-  
-}
-
-@keyframes wave {
-  0% { transform: rotate(10deg); }
-  100% { transform: rotate(-10deg); }
-}
-.project-img img{
+.project-p{
   width: 100%;
-  margin: 2rem 0 0 0;
+  margin-top: 1rem
+}
+
+.reveal{
+  position: relative;
+  margin: 4rem 0;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.project-list{
+  display: flex;
+  margin-top: 2rem;
+}
+.project-list li{
+  margin-left: 2rem;
+  text-transform: uppercase;
+  color:#5a5858
+}
+.project-btn{
+  background-color: none;
+  padding: 1.5rem 2rem ;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color:#5a5858
+}
+.project-text{
+  margin: 2rem
+}
+
+.img-project img{
+  width: 700px;
+  opacity: 0.7
 }
 .testimonies-title{
   padding: 2rem 0;
@@ -327,9 +322,14 @@ color: #4D4D4D;
 @media screen and (min-width: 800px) {
   .contact{
     display: flex;
+    margin-top: 4rem;
+    font-size: 1.2rem;
   }
   .contact-get{
     padding: 5rem;
+  }
+  .project-p{
+    width: 70%;
   }
   .intro{
     padding: 2rem 5rem;
@@ -385,13 +385,15 @@ color: #4D4D4D;
   }
   .skills{
     padding: 5rem;
+    font-size: 1.2rem;
   }
   .service-page{
     display: flex;
  
   }
   .services{
-    margin: 2rem 5rem;
+    margin: 5rem;
+    font-size: 1.2rem;
   }
   .service-block{
     margin-right: 2rem;
@@ -399,19 +401,17 @@ color: #4D4D4D;
   }
   .project{
     margin: 2rem 5rem;
+    font-size: 1.2rem;
   }
-  .project-img{
-    display: flex;
-  }
-  .project-img img{
-    width: 60%;
-object-fit: cover;
-    margin: 2rem;
-    
+  .about-intro p{
+    font-size: 1.5rem;
   }
   .skill-list{
     display: flex;
     justify-content: space-around;
+  }
+  .img-project{
+    display: flex;
   }
   
   
