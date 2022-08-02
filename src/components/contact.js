@@ -2,15 +2,22 @@ import React, {useRef} from 'react'
 import SocialFollow from './SocialFollow';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
 
 function Contact() {
   const form = useRef();
+ 
+
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+  console.log(process.env);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_24odjxc', 'template_pktijdr', form.current, 'NkDhNVNeK1kv9BsGy')
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           Swal.fire({

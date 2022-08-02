@@ -4,7 +4,7 @@ import {faTwitter, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-ico
 
 export default function SocialFollow() {
   return (
-    <div class="social-container">
+    <div className="social-container">
       <a href="https://www.linkedin.com/in/nnenna-udefi-237029222/" className="social">
           <FontAwesomeIcon icon={faLinkedin} size="1x" />
       </a>

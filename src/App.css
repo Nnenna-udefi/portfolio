@@ -109,7 +109,7 @@ color: #fff;
 }
 .contact-msg{
   background-color: #2351DC;
-  padding: 5rem;
+  padding: 5rem 2rem;
   width: 100%;
 }
 .Email-p{
@@ -331,6 +331,9 @@ color: #4D4D4D;
     font-size: 1.2rem;
   }
   .contact-get{
+    padding: 5rem;
+  }
+  .contact-msg{
     padding: 5rem;
   }
   .project-p{
