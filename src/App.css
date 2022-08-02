@@ -265,6 +265,7 @@ color: #4D4D4D;
 }
 .services{
   margin: 3rem;
+  padding: 2rem;
   color: #000;
 }
 .service-block{
@@ -305,15 +306,19 @@ color: #4D4D4D;
   padding: 1.5rem 2rem ;
   font-size: 1.2rem;
   margin-top: 2rem;
-  color:#5a5858
+  color:#2351DC;
+  font-weight: bold;
 }
 .project-text{
   margin: 2rem
 }
 
 .img-project img{
-  width: 700px;
-  opacity: 0.7
+  width: 100%;
+  filter: grayscale(100%)
+}
+.img-project img:hover{
+  filter: grayscale(0);
 }
 .testimonies-title{
   padding: 2rem 0;
@@ -413,7 +418,9 @@ color: #4D4D4D;
   .img-project{
     display: flex;
   }
-  
+  .img-project img{
+    width: 700px
+  }
   
 }
 

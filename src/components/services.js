@@ -36,7 +36,7 @@ function services() {
         <div className='service-block'>
           <img src={Web} alt='' />
           <h3>Web Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec sollicitudin tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec sollicitudin tellus.</p>
+          <p>I help create web based sites and ensure great experience for web users</p>
         </div>
       </div>
     </div>

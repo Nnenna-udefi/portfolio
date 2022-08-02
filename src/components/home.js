@@ -5,7 +5,6 @@ import Project from './project';
 import Services from './services';
 import Contact from './contact';
 import SocialFollow from './SocialFollow';
-// import Amy from '../images/Amy.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactSwitch from "react-switch";
@@ -28,6 +27,7 @@ function Home() {
             <div>
                 <h1 className='logo'>Nnenna Udefi.</h1>
             </div>
+            
             <ul className='nav-list'>
                 <Link to = '#about' smooth className='link-nav'>
                     <li className='nav-link'>About Me</li></Link>
@@ -42,9 +42,7 @@ function Home() {
                 </Link>
             </ul>
 
-            <div>
-            {/* <SocialFollow /> */}
-            </div>
+           
             <div className='switch'>
                 <label>{ theme === "light" ? "Light Mode" : "Dark Mode" }</label>
             <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'}/>
