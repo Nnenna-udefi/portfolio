@@ -99,7 +99,9 @@ color: #fff;
   padding: 2rem;
   width: 100%;
 }
-
+.contact-get h1{
+margin-bottom: 1rem;
+}
 .Email{
   display: flex;
   padding: 1rem 0;
