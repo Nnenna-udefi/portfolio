@@ -83,11 +83,11 @@ window.addEventListener("scroll", Contact);
         <h2>Send A Message</h2>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type='text' placeholder='Enter FullName' name='name' />
+          <input type='text' placeholder='Enter FullName' name='name' required />
           <br />
-          <input type='email' placeholder='Enter Email Address' name = 'email'/>
+          <input type='email' placeholder='Enter Email Address' name = 'email' required/>
           <br />
-          <textarea placeholder='Write A Message' name = 'message'></textarea>
+          <textarea placeholder='Write A Message' name = 'message' required></textarea>
           <br />
           <button className='contact-btn'>Send A Message</button> 
  
