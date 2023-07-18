@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useEffect, useRef} from 'react'
 import SocialFollow from './SocialFollow';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
@@ -12,7 +12,31 @@ function Contact() {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+ 
   
+  useEffect(() => {
+    const handleScroll = () => {
+      var reveals = document.querySelectorAll(".reveal");
+      
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,24 +58,6 @@ function Contact() {
       });
       e.target.reset()
   };
- 
-  
-
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-
-window.addEventListener("scroll", Contact);
 
   return (
     <div id='contact' className='contact reveal'>

@@ -1,23 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Training from '../images/training.png';
 import Responsive from '../images/responsive.png';
-import Web from '../images/web-dev.png'
+import Web from '../images/web-dev.png';
 
-function services() {
-  var reveals = document.querySelectorAll(".reveal");
+function Services() {
+    useEffect(() => {
+      const handleScroll = () => {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-  window.addEventListener("scroll", services);
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div id='services' className='services reveal'>
@@ -43,4 +51,4 @@ function services() {
   )
 }
 
-export default services
+export default Services

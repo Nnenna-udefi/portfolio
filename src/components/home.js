@@ -4,12 +4,13 @@ import About from './about';
 import Project from './project';
 import Services from './services';
 import Contact from './contact';
-import SocialFollow from './SocialFollow';
+// import SocialFollow from './SocialFollow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactSwitch from "react-switch";
 import { useState } from 'react';
 import { createContext } from 'react';
+import nnennaUdefiCV from '../NNENNA_UDEFI_CV.pdf'
 
 
 export const ThemeContext = createContext(null);
@@ -51,11 +52,15 @@ function Home() {
 
         <div className='intro-flex'>
             <div className='intro'>
-                <p className='hi'>Hi There</p>
-                <p className='introduction'>I Am Nnenna Udefi</p>
-                <p className='title'> A Top-Notch Front-End Developer</p>
+                <p className='hi'>Hi There,</p>
+                <p className='introduction'><span className='name'>my name is </span>Nnenna Udefi</p>
+                <p className='title'> I'm a software engineer specialized in building Frontend applications, occasionally backend too. I take pride in my work and ensure I deliver the fastest, most accessible and most responsive application possible.</p>
                 <div>
-                <SocialFollow />
+                    <a href={nnennaUdefiCV} download="NnennaUdefiResume" 
+                    target="_blank" rel="noreferrer">
+                        <button className='download_btn'>RESUME</button>
+                    </a>
+                {/* <SocialFollow /> */}
                 </div>
                 
             </div>
@@ -103,7 +108,7 @@ function Home() {
 
         <footer>
             <h1>Nnenna Udefi</h1>
-            <a href="https://www.linkedin.com/in/nnenna-udefi-237029222/">
+            <a href="https://www.linkedin.com/in/nnenna-udefi/">
                 <FontAwesomeIcon icon = {faLinkedin} size='1.5x' className='footer-icon' />
             </a>
             <a href="https://twitter.com/nnennaudefi" >

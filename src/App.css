@@ -26,7 +26,7 @@ label{
   margin-right: 1rem;
 }
 .logo{
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 .Navbar{
   display: flex;
@@ -124,6 +124,14 @@ margin-bottom: 1rem;
 .contact-msg h2{
   color: #fff;
 }
+.download_btn {
+  padding: 1.2rem 1.5rem;
+  color: #2351DC;
+  background-color: #fff;
+  border: 3px solid #2351DC;
+  font-weight: 1.1rem;
+  border-radius: 8px;
+}
 input{
   background-color: none;
   width: 70%;
@@ -176,10 +184,12 @@ margin: 2rem;
   color:#2351DC;
   font-size: 2rem;
 }
+.name {
+  font-size: 1.2rem;
+}
 .title{
-  font-size: 2rem;
+  font-size: 0.8rem;
   font-weight: 800;
-  line-height: 72px;
   padding-bottom: 1rem;
   color: #000;
 }
@@ -216,11 +226,9 @@ margin: 2rem;
   padding: 2rem 0.5rem;
 }
 .intro-flex{
-   text-align: center;
-   padding: 5rem 0;
+   padding: 5rem 1rem;
 }
 .about-intro{
-  text-align: center;
   padding: 5rem 2rem;
   background-color: #F6F8FE;
   color:#000;
@@ -245,14 +253,16 @@ margin: 2rem;
 }
 .skill-logo{
   display: flex;
-  align-content: center;
-  align-items: center;
-  margin: 2rem 0;
+  flex-wrap: wrap;
 }
+
 
 .skill-list li{
   list-style-type: none;
-  margin-left: .5rem;
+  margin: 2rem 0 0 .5rem;
+  border: 2px solid #737373;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
 }
 .skills{
   padding: 1.5rem;
@@ -325,12 +335,21 @@ color: #4D4D4D;
 .testimonies-title{
   padding: 2rem 0;
 }
-
+.profile {
+  width: 250px;
+  margin: 2rem;
+  border: 2px solid #5a5858;
+  border-radius: 50%;
+}
 @media screen and (min-width: 800px) {
   .contact{
     display: flex;
     margin-top: 4rem;
     font-size: 1.2rem;
+  }
+  .about-intro {
+    display: flex;
+    padding: 2rem 5rem;
   }
   .contact-get{
     padding: 5rem;
@@ -391,7 +410,11 @@ color: #4D4D4D;
   }
  
   .title{
-    font-size: 3rem;
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  .introduction {
+    font-size: 2.5rem;
   }
   .skills{
     padding: 5rem;
@@ -414,7 +437,7 @@ color: #4D4D4D;
     font-size: 1.2rem;
   }
   .about-intro p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .skill-list{
     display: flex;
@@ -425,6 +448,10 @@ color: #4D4D4D;
   }
   .img-project img{
     width: 700px
+  }
+  .profile{
+    width: 300px;
+    border-radius: 30%;
   }
   
 }
