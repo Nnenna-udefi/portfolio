@@ -4,21 +4,20 @@ import About from './about';
 import Project from './project';
 import Services from './services';
 import Contact from './contact';
-// import SocialFollow from './SocialFollow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactSwitch from "react-switch";
 import { useState } from 'react';
 import { createContext } from 'react';
-import nnennaUdefiCV from '../NNENNA_UDEFI_CV.pdf'
+import nnennaUdefiCV from '../NNENNA_UDEFI_CV.pdf';
 
 
 export const ThemeContext = createContext(null);
 
 function Home() {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
-    //if the currrent theme is light i want to set it to dark, then if its light set it to dark 
+    //if the currrent theme is light i want to set it to dark, then if its dark set it to light 
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
   return (
@@ -45,8 +44,11 @@ function Home() {
 
            
             <div className='switch'>
-                <label>{ theme === "light" ? "Light Mode" : "Dark Mode" }</label>
-            <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'}/>
+            <label className='switch-label'>
+                { theme === "light" ? "🌙" : "🔆" }
+            </label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} className='buttonTheme'/>
+            
             </div>
         </div>
 
@@ -70,40 +72,6 @@ function Home() {
         <About />
         <Services />
         <Project />
-        {/* <div className='testimonies'>
-            <div className='testimonies-title'>
-                <h1>Testimonies & Recommendations</h1>
-            </div>
-
-            <div className='rec'>
-
-            <div className='recommendation'>
-                <div className='recommendation-block'>
-                    <img src={Amy} alt='' />
-                    <h3>Osuamkpe Amy</h3>
-                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
-                </div>
-                <div className='recommendation-block'>
-                    <img src={Amy} alt='' />
-                    <h3>Osuamkpe Amy</h3>
-                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
-                </div>
-            </div>
-            <div className='recommendation'>
-                <div className='recommendation-block'>
-                    <img src={Amy} alt='' />
-                    <h3>Osuamkpe Amy</h3>
-                    <p>Nnenna gets things done. She is very passionate about what he does and she's always fun to be with.</p>
-                </div>
-                <div className='recommendation-block'>
-                    <img src={Amy} alt='' />
-                    <h3>Osuamkpe Amy</h3>
-                    <p>Nnenna gets things done. She is very passionate about what he does and She's always fun to be with.</p>
-                </div>
-            </div>
-            </div> */}
-        {/* </div> */}
-
         <Contact />
 
         <footer>
