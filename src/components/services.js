@@ -33,17 +33,17 @@ function Services() {
       <div className='service-page'>
         <div className='service-block'>
           <img src={Training} alt='' />
-          <h3>Training</h3>
+          <h2>Training</h2>
           <p>I offer instructor-led training in a way that fits with the way you work. </p>
         </div>
         <div className='service-block'>
           <img src={Responsive} alt='' />
-          <h3>Responsive Web design </h3>
+          <h2>Responsive Web design </h2>
           <p>I Help design Mobile-friendly, worldclass websites that helps scales your bussiness and helps user experience get better.</p>
         </div>
         <div className='service-block'>
           <img src={Web} alt='' />
-          <h3>Web Development</h3>
+          <h2>Web Development</h2>
           <p>I help create web based sites and ensure great experience for web users</p>
         </div>
       </div>

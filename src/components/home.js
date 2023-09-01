@@ -76,13 +76,13 @@ function Home() {
 
         <footer>
             <h1>Nnenna Udefi</h1>
-            <a href="https://www.linkedin.com/in/nnenna-udefi/">
-                <FontAwesomeIcon icon = {faLinkedin} size='1.5x' className='footer-icon' />
+            <a href="https://www.linkedin.com/in/nnenna-udefi/" aria-label='Linkedin'>
+                <FontAwesomeIcon icon = {faLinkedin} size='1.5x' className='footer-icon'/>
             </a>
-            <a href="https://twitter.com/nnennaudefi" >
+            <a href="https://twitter.com/nnennaudefi" aria-label='Twitter'>
                 <FontAwesomeIcon icon = {faTwitter} size='1.5x' className='footer-icon'/>
             </a>
-            <a href="https://github.com/Nnenna-udefi" >
+            <a href="https://github.com/Nnenna-udefi" aria-label='Github'>
           <FontAwesomeIcon icon={faGithub} size="1.5x" className="footer-icon"/>
       </a>
             <p> CopyRight @ 2022 | All rights reserved</p>

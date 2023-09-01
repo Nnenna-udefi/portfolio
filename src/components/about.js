@@ -50,8 +50,8 @@ function About() {
     <div className='skills reveal'>
         <h1>My Skills</h1>
         <p>Below are a list of my tools and languages</p>
-        <ul className='skill-list'>
-          <div className='skill-logo'>
+        <div className='skill-list'>
+          <ul className='skill-logo'>
             <li>HTML</li>
             <li>CSS</li>
             <li>React</li>
@@ -64,8 +64,8 @@ function About() {
             <li>Nginx</li>
             <li>DataDog</li>
 
-          </div> 
-        </ul>
+          </ul> 
+        </div>
       </div>
     </div>
   )

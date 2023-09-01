@@ -51,11 +51,12 @@ function Project() {
                   <li>PYTHON</li>
                   <li>FlASK</li>
                 </ul>
-                <a href = 'https://bookishreads-landing-page.vercel.app/'>
+                <a href = 'https://bookishreads.onrender.com/'>
                   <button className='project-btn'>VISIT SITE</button>
                 </a>
-
-                
+                <a href = 'https://github.com/Nnenna-udefi/bookishread_project.git'>
+                  <button className='project-btn'>CODE</button>
+                </a> 
               </div>
           </div>
     <hr/>
@@ -72,6 +73,9 @@ function Project() {
                   <button className='project-btn'>VISIT SITE</button>
                 </a>
 
+                <a href = 'https://github.com/Nnenna-udefi/easy-care.git'>
+                  <button className='project-btn'>CODE</button>
+                </a>
                 
               </div>
           </div>
@@ -87,6 +91,10 @@ function Project() {
                 </ul>
                 <a href="https://restaurant-website-woad.vercel.app">
                   <button className='project-btn'>VISIT SITE</button>
+                </a>
+
+                <a href = 'https://github.com/Nnenna-udefi/Restaurant-Website-1.git'>
+                  <button className='project-btn'>CODE</button>
                 </a>
         
               </div>
@@ -108,8 +116,10 @@ function Project() {
                 <a href = 'https://sunnyside-agency-card-capstone-project.vercel.app' >
                   <button className='project-btn'>VISIT SITE</button>
                 </a>
-              
-               
+
+                <a href = 'https://github.com/Nnenna-udefi/sunnyside-agency-card-capstone-project-2.git'>
+                  <button className='project-btn'>CODE</button>
+                </a> 
               </div>
             </div>
         
@@ -126,6 +136,10 @@ function Project() {
                 <a href = 'https://artic-travel.netlify.app/'>
                   <button className='project-btn'>VISIT SITE</button>
                 </a>
+
+                <a href = 'https://github.com/Nnenna-udefi/travel.git'>
+                  <button className='project-btn'>CODE</button>
+                </a> 
               
               </div>
 

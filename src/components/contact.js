@@ -85,11 +85,13 @@ function Contact() {
       </div>
 
       <div className='contact-msg'>
-        <h3>Need A Service?</h3>
-        <h2>Send A Message</h2>
+        
+        <h2>Need A Service?</h2>
+        <h3>Send A Message</h3>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type='text' placeholder='Enter FullName' name='name' required />
+          <label for='name' className='visually-hidden'>Enter Full details</label><br/>
+          <input type='text' placeholder='Enter FullName' name='name' required id='name' />
           <br />
           <input type='email' placeholder='Enter Email Address' name = 'email' required/>
           <br />
