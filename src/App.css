@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .App {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .switch {
@@ -21,10 +21,10 @@
   margin-right: 5px;
 }
 
-#light{
+#light {
   background-color: #fff;
 }
-#dark{
+#dark {
   background-color: #000;
 }
 #dark .Navbar {
@@ -32,140 +32,143 @@
   margin-top: 0;
   padding-top: 2rem;
 }
-#dark .nav-link{
+#dark .nav-link {
   color: #fff;
 }
-label{
+label {
   margin-right: 1rem;
 }
-.logo{
+.logo {
   font-size: 1.5rem;
 }
-.Navbar{
+.Navbar {
   display: flex;
   justify-content: space-between;
   align-content: center;
   text-align: center;
   margin: 2rem 1rem;
 }
-.nav-list{
+.nav-list {
   display: none;
   margin-left: 4rem;
 }
-.nav-link{
+.nav-link {
   list-style-type: none;
-  margin-left:  2rem;
-  margin-top: .5rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
-.link-nav:hover{
-  color:#2351DC;
+.link-nav:hover {
+  color: #2351dc;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.link-nav{
+.link-nav {
   text-decoration: none;
   color: #000;
 }
 
-
-footer{
-  background-color: 
-  hsla(225, 73%, 10%, 1);
+footer {
+  background-color: hsla(225, 73%, 10%, 1);
   text-align: center;
-color: #fff;
-padding: 5rem 2rem;
+  color: #fff;
+  padding: 5rem 2rem;
 }
-#dark footer{
+#dark footer {
   background-color: rgb(61, 60, 60);
 }
 #dark .testimonies-title {
-background-color: rgb(61, 60, 60);
-color: #fff;
-}
-#dark .contact-msg{
   background-color: rgb(61, 60, 60);
-  margin-bottom: 1rem ;
+  color: #fff;
+}
+#dark .contact-msg {
+  background-color: rgb(61, 60, 60);
+  margin-bottom: 1rem;
 }
 
-.social{
-  border: 1px solid #2351DC;
-  border-radius:  50%;
-  padding: .5rem;
-  color: #2351DC;
+.social {
+  border: 1px solid #2351dc;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #2351dc;
   margin-left: 1rem;
 }
-#dark .social{
+#dark .social {
   border: 1px solid #fff;
   color: #fff;
 }
 
-.footer-icon{
-  border-radius:  50%;
-  padding: .5rem;
+.footer-icon {
+  border-radius: 50%;
+  padding: 0.5rem;
   color: #fff;
   margin: 1rem 1rem 1rem 0;
   border: 1px solid #fff;
-  
 }
-.contact-get{
+.contact-get {
   padding: 2rem;
   width: 100%;
 }
-.contact-get h1{
-margin-bottom: 1rem;
+.contact-get h1 {
+  margin-bottom: 1rem;
 }
-.Email{
+.Email {
   display: flex;
   padding: 1rem 0;
 }
-.contact-p{
+.contact-p {
   padding: 1rem 0;
 }
-.contact-msg{
-  background-color: #2351DC;
+.contact-msg {
+  background-color: #2351dc;
   padding: 5rem 2rem;
   width: 100%;
 }
-.Email-p{
+.Email-p {
   color: #737373;
   font-size: 12px;
 }
-.contact-msg h3{
+.contact-msg h3 {
   color: rgba(255, 255, 255, 0.7);
 }
-.contact-msg h2{
+.contact-msg h2 {
   color: #fff;
 }
 .download_btn {
-  padding: 1.2rem 1.5rem;
-  color: #2351DC;
-  background-color: #fff;
-  border: 3px solid #2351DC;
-  font-weight: 1.1rem;
-  border-radius: 8px;
+  color: #2351dc;
+  background: none;
+  border-width: 0 0 2px 0;
+  border-color: #2351dc;
+  font-size: 1rem;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0;
 }
 .download_btn:hover {
-  background-color: #2351DC;
-  color: #fff;
+  font-size: 1.3rem;
 }
 
-input{
+#dark .download_btn {
+  border-color: #737373;
+  color: #edf1fc;
+}
+
+input {
   background-color: none;
   width: 70%;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0;
-  border: 0.6px solid #FFFFFF
+  border: 0.6px solid #ffffff;
 }
-textarea{
-  border: 0.6px solid #FFFFFF;
-  width: 70%; 
-  padding: .5rem;
+textarea {
+  border: 0.6px solid #ffffff;
+  width: 70%;
+  padding: 0.5rem;
 }
-.contact-btn{
-  color: #2351DC;
+.contact-btn {
+  color: #2351dc;
   border: none;
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 7px;
   background-color: #fff;
   margin-top: 1rem;
@@ -174,33 +177,32 @@ textarea{
 .visually-hidden {
   visibility: hidden;
 }
-.envelope, .phone{
-  margin: .5rem .5rem 0 0;
+.envelope,
+.phone {
+  margin: 0.5rem 0.5rem 0 0;
 }
 
-.recommendation-block img{
+.recommendation-block img {
   width: 20%;
-border-radius: 50%;
-
+  border-radius: 50%;
 }
-.recommendation-block{
-align-content: center;
-align-items: center;
-margin: 2rem;
+.recommendation-block {
+  align-content: center;
+  align-items: center;
+  margin: 2rem;
 }
-.recommendation-block p{
+.recommendation-block p {
   font-size: 14px;
- 
 }
-.testimonies-title{
+.testimonies-title {
   text-align: center;
 }
 
 #dark .hi {
   color: #f7f1f1;
 }
-.hi{
-  color:#2351DC;
+.hi {
+  color: #2351dc;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -208,79 +210,78 @@ margin: 2rem;
 #dark .introduction {
   color: #f7f1f1;
 }
-.introduction{
-  font-weight: 700;
-  color:#2351DC;
+.introduction {
+  font-weight: 600;
+  color: #2351dc;
   font-size: 2rem;
 }
 .name {
   font-size: 1.2rem;
 }
-.title{
+.title {
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 500;
+  word-spacing: 0.2rem;
   padding-bottom: 1rem;
   color: #000;
 }
-#dark .title{
+#dark .title {
   color: #fff;
 }
-#dark .about-intro{
+#dark .about-intro {
   color: #fff;
 }
 
-#dark .skills{
+#dark .skills {
   color: #fff;
 }
-#dark .project{
+#dark .project {
   color: #fff;
 }
-#dark .rec{
+#dark .rec {
   color: #fff;
 }
-#dark .contact{
+#dark .contact {
   color: #fff;
 }
-#dark .services{
+#dark .services {
   color: #fff;
 }
-.rec{
+.rec {
   color: #000;
 }
-.contact{
+.contact {
   color: #000;
 }
-.intro{
+.intro {
   width: 100%;
   padding: 2rem 0.5rem;
 }
-.intro-flex{
-   padding: 5rem 1rem;
+.intro-flex {
+  padding: 5rem 1rem;
 }
-.about-intro{
+.about-intro {
   padding: 5rem 2rem;
-  background-color: #F6F8FE;
-  color:#000;
+  background-color: #f6f8fe;
+  color: #000;
 }
 #dark .about-intro {
   background-color: rgb(61, 60, 60);
-  
 }
-#dark .about-intro p{
+#dark .about-intro p {
   color: #fff;
 }
-.about-intro p{
-  color: #4D4D4D;
+.about-intro p {
+  color: #4d4d4d;
   margin-top: 1rem;
- 
 }
-.html-icon{
-  color: #2351DC;
-  background-color: #EDF1FC;
-  padding: .5rem;
+.html-icon {
+  color: #2351dc;
+  background-color: #edf1fc;
+  padding: 0.5rem;
   border-radius: 5px;
 }
-.skill-logo{
+.skill-logo {
   display: flex;
   flex-wrap: wrap;
 }
@@ -296,96 +297,95 @@ margin: 2rem;
   background-color: #000;
 }
 
-.skill-list li{
+.skill-list li {
   list-style-type: none;
-  margin: 2rem 0 0 .5rem;
+  margin: 2rem 0 0 0.5rem;
   padding: 1rem 1.5rem;
   border-radius: 3px;
 }
-.skills{
+.skills {
   padding: 1.5rem;
   color: #000;
 }
-.skills p{
+.skills p {
   padding-bottom: 3rem;
-  color:#737373;
+  color: #737373;
 }
 
-#dark .skills p{
+#dark .skills p {
   color: #f7f1f1;
 }
-.service-block p{
-  color: #4D4D4D;
+.service-block p {
+  color: #4d4d4d;
 }
 
-#dark .service-block p{
+#dark .service-block p {
   color: #f7f1f1;
 }
-.services{
+.services {
   margin: 3rem;
   padding: 2rem;
   color: #000;
 }
-.service-block{
+.service-block {
   margin-top: 3rem;
 }
-.project{
+.project {
   margin: 4rem 2rem;
   color: #000;
 }
-.project-p{
+.project-p {
   width: 100%;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
 
-.reveal{
+.reveal {
   position: relative;
   margin: 4rem 0;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
-
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
-.project-list{
+.project-list {
   display: flex;
   margin-top: 2rem;
 }
 
-.project-list li{
+.project-list li {
   margin-left: 2rem;
   text-transform: uppercase;
-  color:#5a5858
+  color: #5a5858;
 }
 
-#dark .project-list li{
+#dark .project-list li {
   color: #f7f1f1;
 }
-.project-btn{
+.project-btn {
   background-color: none;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: 1rem;
   margin-top: 2rem;
-  color:#2351DC;
+  color: #2351dc;
   font-weight: bold;
   margin-left: 1rem;
   text-transform: uppercase;
 }
-.project-text{
-  margin: 2rem
+.project-text {
+  margin: 2rem;
 }
 
-.img-project img{
+.img-project img {
   width: 100%;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
 }
-.img-project img:hover{
+.img-project img:hover {
   filter: grayscale(0);
 }
-.testimonies-title{
+.testimonies-title {
   padding: 2rem 0;
 }
 .profile {
@@ -395,7 +395,7 @@ margin: 2rem;
   border-radius: 50%;
 }
 @media screen and (min-width: 800px) {
-  .contact{
+  .contact {
     display: flex;
     margin-top: 4rem;
     font-size: 1.2rem;
@@ -404,114 +404,111 @@ margin: 2rem;
     display: flex;
     padding: 2rem 5rem;
   }
-  .contact-get{
+  .contact-get {
     padding: 5rem;
   }
-  .contact-msg{
+  .contact-msg {
     padding: 5rem;
   }
-  .project-p{
+  .project-p {
     width: 70%;
   }
-  .intro{
+  .intro {
     padding: 2rem 5rem;
   }
-  .Navbar{
+  .Navbar {
     margin: 2rem 5rem;
   }
-  .nav-list{
+  .nav-list {
     display: flex;
   }
-  .lin{
+  .lin {
     font-size: 3rem;
   }
-  .logo{
+  .logo {
     font-size: 2rem;
   }
-  .contact-p{
+  .contact-p {
     width: 70%;
   }
-  .testimonies{
+  .testimonies {
     display: flex;
   }
-  .testimonies-title{
-    background-color: #2351DC;
+  .testimonies-title {
+    background-color: #2351dc;
     color: #fff;
     width: 564px;
     height: 700px;
     display: flex;
     align-content: center;
   }
-  .testimonies-title h1{
-    padding:10rem 5rem 5rem 0;
+  .testimonies-title h1 {
+    padding: 10rem 5rem 5rem 0;
     line-height: 63px;
   }
-  .rec{
+  .rec {
     width: 60%;
     padding: 2rem 3rem;
   }
-  .recommendation-block p{
+  .recommendation-block p {
     font-size: 14px;
     width: 100%;
   }
-  .recommendation-block{
+  .recommendation-block {
     text-align: center;
   }
- 
-  .recommendation{
+
+  .recommendation {
     display: flex;
   }
- 
-  .title{
+
+  .title {
     font-size: 1.2rem;
     width: 70%;
   }
   .introduction {
     font-size: 2.5rem;
   }
-  .skills{
+  .skills {
     padding: 5rem;
     font-size: 1.2rem;
   }
-  .service-page{
+  .service-page {
     display: flex;
- 
   }
-  .services{
+  .services {
     margin: 5rem;
     font-size: 1.2rem;
   }
-  .service-block{
+  .service-block {
     margin-right: 2rem;
-    width: 33%
+    width: 33%;
   }
-  .project{
+  .project {
     margin: 2rem 5rem;
     font-size: 1.2rem;
   }
   .project-btn {
-    padding: 1rem 1.5rem ;
+    padding: 1rem 1.5rem;
     font-size: 1.2rem;
   }
-  .about-intro p{
+  .about-intro p {
     font-size: 1.1rem;
   }
-  .skill-list{
+  .skill-list {
     display: flex;
   }
   .skill-logo {
     width: 70%;
   }
-  .img-project{
+  .img-project {
     display: flex;
   }
-  .img-project img{
-    width: 700px
+  .img-project img {
+    width: 700px;
   }
-  .profile{
+  .profile {
     width: 300px;
     border-radius: 30%;
   }
-  
 }
-
