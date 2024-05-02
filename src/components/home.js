@@ -13,7 +13,6 @@ import {
 import ReactSwitch from "react-switch";
 import { useState } from "react";
 import { createContext } from "react";
-import nnennaUdefiCV from "../NNENNA_UDEFI_CV.pdf";
 
 export const ThemeContext = createContext(null);
 
@@ -72,12 +71,12 @@ function Home() {
             </p>
             <div>
               <a
-                href={nnennaUdefiCV}
-                download="NnennaUdefiResume"
+                href="https://docs.google.com/document/d/1NC8cayCBMLeWXh_-rYeRwu0XttaQgd5EvhuPawbvLmc/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
+                className="download_btn"
               >
-                <button className="download_btn">RESUME</button>
+                RESUME
               </a>
             </div>
           </div>
