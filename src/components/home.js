@@ -13,6 +13,7 @@ import {
 import ReactSwitch from "react-switch";
 import { useState } from "react";
 import { createContext } from "react";
+import { Typewriter } from "./typewriter";
 
 export const ThemeContext = createContext(null);
 
@@ -60,14 +61,18 @@ function Home() {
           <div className="intro">
             <p className="hi">Hi There,</p>
             <p className="introduction">
-              <span className="name">my name is </span>Nnenna Udefi
+              <Typewriter text="my name is Nnenna Udefi" delay={100} />
             </p>
             <p className="title">
               {" "}
-              I'm a software engineer specialized in building Frontend
+              <Typewriter
+                text=" I'm a software engineer specialized in building Frontend
               applications, occasionally backend too. I take pride in my work
               and ensure I deliver the fastest, most accessible and most
-              responsive application possible.
+              responsive application possible."
+                delay={30}
+                startDelay={3000}
+              />
             </p>
             <div>
               <a

@@ -400,6 +400,7 @@ textarea {
 .img-project img:hover {
   filter: grayscale(50%);
 }
+
 .testimonies-title {
   padding: 2rem 0;
 }
