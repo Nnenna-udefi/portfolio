@@ -10,16 +10,19 @@ function About() {
       <div className="about-intro">
         <div>
           <h1>About Me</h1>
-          <p>I'm a Front End Developer from Nigeria.</p>
           <p>
-            A passionate and goal driven Techpreneur whose interest is in using
-            technology to build solutions to solve real world problems.
+            I'm a Front End Developer from Nigeria with a strong passion for
+            creating responsive and accessible websites.{" "}
           </p>
           <p>
-            I love building websites with responsive designs which also focuses
-            on accesibility. I got into programming in 2021 and since then I
-            have had the opportunity to work with amazing people and on diverse
-            projects.
+            Since diving into programming in 2022, I've had the privilege of
+            collaborating with talented teams on diverse projects, where I
+            applied my skills in HTML, CSS, JavaScript, and modern frameworks
+            and Libraries like React, NextJs.
+          </p>
+          <p>
+            My goal is to leverage technology to solve real-world problems and
+            deliver user-centric digital solutions.
           </p>
         </div>
         <div>
