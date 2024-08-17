@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../images/nnenna-img.jpeg";
+import Profile from "../images/nnenna.jpg";
 import useScrollReveal from "../hooks/useScrollReveal";
 
 function About() {
@@ -44,6 +44,7 @@ function About() {
             <li>DataDog</li>
             <li>TypeScript</li>
             <li>NextJs</li>
+            <li>TailwindCss</li>
           </ul>
         </div>
       </div>
