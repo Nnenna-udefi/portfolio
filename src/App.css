@@ -395,7 +395,6 @@ textarea {
 
 .img-project img {
   width: 100%;
-  height: 400px;
   filter: grayscale(0);
 }
 .img-project img:hover {
@@ -519,6 +518,7 @@ textarea {
   }
   .img-project {
     display: flex;
+    height: 400px;
   }
   .img-project img {
     width: 700px;
