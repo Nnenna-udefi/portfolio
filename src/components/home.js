@@ -99,21 +99,21 @@ function Home() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              size="1.5x"
+              size="2x"
               className="footer-icon"
             />
           </a>
           <a href="https://twitter.com/nnennaudefi" aria-label="Twitter">
             <FontAwesomeIcon
               icon={faTwitter}
-              size="1.5x"
+              size="2x"
               className="footer-icon"
             />
           </a>
           <a href="https://github.com/Nnenna-udefi" aria-label="Github">
             <FontAwesomeIcon
               icon={faGithub}
-              size="1.5x"
+              size="2x"
               className="footer-icon"
             />
           </a>

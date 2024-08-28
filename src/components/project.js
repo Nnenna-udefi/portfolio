@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Easycare from "../images/easycare.jpg";
 import Bookishreads from "../images/bookrishread_home.png";
 import useScrollReveal from "../hooks/useScrollReveal";
 import Todo from "../images/Todo-List.png";
 import HouseOfAccent from "../images/Home-House-of-Ascent.png";
 import TellaTrustAdmin from "../images/TellaTrust.png";
+import { BaseModal } from "./baseModal";
 
 const projectList = [
   {
@@ -55,6 +56,52 @@ const projectList = [
 function Project() {
   useScrollReveal();
 
+  const [showCodeModal, setShowCodeModal] = useState(false);
+  const [showProjectForm, setShowProjectForm] = useState(false);
+  const [passcode, setPasscode] = useState("");
+  const [newProject, setNewProject] = useState({
+    image: "",
+    alt: "",
+    desc: "",
+    live_link: "",
+    github_link: "",
+    language: [],
+  });
+
+  const correctPasscode = "nnenna";
+
+  useEffect(() => {
+    localStorage.setItem("projectList", JSON.stringify(projectList));
+  }, [projectList]);
+
+  const handlePasscodeSubmit = (e) => {
+    e.preventDefault();
+    if (passcode === correctPasscode) {
+      setShowProjectForm(true);
+      setShowCodeModal(false);
+    } else {
+      alert("Incorrect PassCode!");
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setNewProject({ ...newProject, [name]: value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    projectList.push(newProject);
+    setShowProjectForm(false);
+    alert("Project added successfully!");
+  };
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    const imageUrl = URL.createObjectURL(file);
+    setNewProject({ ...newProject, image: imageUrl, alt: file.name });
+  };
+
   return (
     <div id="project" className="project">
       <h1>Projects</h1>
@@ -65,8 +112,8 @@ function Project() {
 
       <div className="pro-img">
         {projectList.map((project) => (
-          <div>
-            <div className="img-project reveal">
+          <div key={project.desc}>
+            <div className="img-project reveal" key={project.desc}>
               <img src={project.image} alt={project.alt} />
               <div className="project-text">
                 <p>{project.desc}</p>
@@ -87,6 +134,90 @@ function Project() {
           </div>
         ))}
       </div>
+
+      <button className="download_btn" onClick={() => setShowCodeModal(true)}>
+        Add a Project
+      </button>
+
+      <BaseModal isOpen={showCodeModal} onClose={() => setShowCodeModal(false)}>
+        <div>
+          <div>
+            <h2>Enter PassCode</h2>
+            <form onSubmit={handlePasscodeSubmit}>
+              <input
+                type="password"
+                value={passcode}
+                onChange={(e) => setPasscode(e.target.value)}
+                className="modal-input"
+              />
+              <button type="submit" className="modal-button">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </BaseModal>
+
+      <BaseModal
+        isOpen={showProjectForm}
+        onClose={() => setShowProjectForm(false)}
+      >
+        <div>
+          <div>
+            <h2>Add a New Project</h2>
+            <form onSubmit={handleFormSubmit}>
+              <input
+                type="text"
+                name="desc"
+                placeholder="Enter Project Description"
+                value={newProject.desc}
+                className="modal-input"
+                onChange={handleInputChange}
+              />
+              <input
+                type="text"
+                name="live_link"
+                placeholder="Live Link"
+                value={newProject.live_link}
+                className="modal-input"
+                onChange={handleInputChange}
+              />
+              <input
+                type="text"
+                name="github_link"
+                placeholder="GitHub Link"
+                value={newProject.github_link}
+                className="modal-input"
+                onChange={handleInputChange}
+              />
+              <input
+                type="text"
+                name="language"
+                placeholder="Languages (comma separated)"
+                className="modal-input"
+                value={newProject.language.join(", ")}
+                onChange={(e) =>
+                  setNewProject({
+                    ...newProject,
+                    language: e.target.value.split(", "),
+                  })
+                }
+              />
+
+              <input
+                type="file"
+                name="image"
+                accept="image/png, image/jpeg"
+                onChange={handleImageChange}
+              ></input>
+              <br />
+              <button type="submit" className="modal-button">
+                Add Project
+              </button>
+            </form>
+          </div>
+        </div>
+      </BaseModal>
     </div>
   );
 }
