@@ -55,15 +55,7 @@ export const BaseModal = ({
           transition={{ duration: 0.3 }}
           className="modal"
         >
-          <div
-            ref={tooltipRef}
-            className="modal-tooltip"
-            // className={cn(
-            //   "relative mb-32 h-[70%] max-h-[540px] w-[30%] overflow-y-auto rounded-xl border border-themeText/[0.05] p-5 shadow-md [@media(max-width:1200px)]:w-[50%] [@media(max-width:700px)]:w-[90%] ",
-            //   className,
-            //   isLight ? "bg-white" : "bg-[#16151C]"
-            // )}
-          >
+          <div ref={tooltipRef} className="modal-tooltip">
             <button type="button" onClick={func} className="modal-close-btn">
               <X />
             </button>
