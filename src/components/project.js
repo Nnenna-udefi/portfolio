@@ -72,7 +72,7 @@ function Project() {
 
   useEffect(() => {
     localStorage.setItem("projectList", JSON.stringify(projectList));
-  }, [projectList]);
+  }, []);
 
   const handlePasscodeSubmit = (e) => {
     e.preventDefault();
