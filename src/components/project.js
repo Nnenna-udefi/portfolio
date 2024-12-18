@@ -1,16 +1,34 @@
 import React, { useState, useEffect } from "react";
-import Easycare from "../images/easycare.jpg";
-import Bookishreads from "../images/bookrishread_home.png";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { BaseModal } from "./baseModal";
 import Todo from "../images/Todo-List.png";
 import HouseOfAccent from "../images/Home-House-of-Ascent.png";
 import TellaTrustAdmin from "../images/TellaTrust.png";
-import { BaseModal } from "./baseModal";
+import Easycare from "../images/easycare.jpg";
+import Bookishreads from "../images/bookrishread_home.png";
+import DChirs from "../images/dchairs.png";
+import HerRise from "../images/herRise.png";
 
 const projectList = [
   {
+    image: DChirs,
+    alt: "DC braiding",
+    desc: "Web interface booking for a braiding section",
+    live_link: "https://dc-braiding.onrender.com/",
+    github_link: "https://github.com/Nnenna-udefi/booking-app",
+    language: ["REACTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
+  },
+  {
+    image: HerRise,
+    alt: "HerRise Foundation",
+    desc: "Web interface for a women non-profit organization",
+    live_link: "https://herrise-foundation.onrender.com/",
+    github_link: "https://github.com/Nnenna-udefi/HerRise",
+    language: ["REACTJS", "TYPESCRIPT", "TAILWINDCSS"],
+  },
+  {
     image: TellaTrustAdmin,
-    alt: "Tellatrust admin hero",
+    alt: "Tellatrust admin",
     desc: "Web interface for TellaTrust Admin",
     live_link: "https://admin.tellatrust.com/",
     github_link: "https://github.com/Swizel-Tech/tellatrust-admin",
