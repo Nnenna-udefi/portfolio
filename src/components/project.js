@@ -13,7 +13,7 @@ const projectList = [
   {
     image: DChirs,
     alt: "DC braiding",
-    desc: "Web App for a braiding salon, which includes booking page and an admin dashboard",
+    desc: "Web App for a braiding salon, which includes a booking page and an admin dashboard",
     live_link: "https://dc-braiding.onrender.com/",
     github_link: "https://github.com/Nnenna-udefi/booking-app",
     language: ["REACTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
