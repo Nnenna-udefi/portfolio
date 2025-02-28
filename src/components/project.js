@@ -8,7 +8,7 @@ import Easycare from "../images/easycare.jpg";
 import Bookishreads from "../images/bookrishread_home.png";
 import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
-import Bookable from "../images/bookableSTR.png";
+import Bookable from "../images/BookableSTR.png";
 
 const projectList = [
   {
@@ -17,7 +17,7 @@ const projectList = [
     desc: "BookableSTR helps property owners and short-term rental creates user-friendly websites that showcase their properties, drive direct bookings, and eliminate third-party fees.",
     live_link: "https://bookablestr.com/",
     github_link: "https://github.com/bookablestr/bookableSTR",
-    language: ["NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
+    language: ["NEXTJS", "REACTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
   {
     image: DChirs,
