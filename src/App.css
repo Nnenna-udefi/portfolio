@@ -479,6 +479,9 @@ textarea {
   border: 2px solid #5a5858;
   border-radius: 50%;
 }
+.link {
+  display: flex;
+}
 @media screen and (min-width: 800px) {
   .contact {
     display: flex;
@@ -566,16 +569,17 @@ textarea {
     font-size: 1.2rem;
   }
   .service-block {
-    margin-right: 2rem;
+    padding-right: 2rem;
     width: 33%;
   }
+
   .project {
     margin: 2rem 5rem;
     font-size: 1.2rem;
   }
   .project-btn {
     padding: 1rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .about-intro p {
     font-size: 1.1rem;

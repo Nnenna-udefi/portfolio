@@ -8,15 +8,24 @@ import Easycare from "../images/easycare.jpg";
 import Bookishreads from "../images/bookrishread_home.png";
 import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
+import Bookable from "../images/bookableSTR.png";
 
 const projectList = [
+  {
+    image: Bookable,
+    alt: "BookableStr",
+    desc: "BookableSTR helps property owners and short-term rental creates user-friendly websites that showcase their properties, drive direct bookings, and eliminate third-party fees.",
+    live_link: "https://bookablestr.com/",
+    github_link: "https://github.com/bookablestr/bookableSTR",
+    language: ["NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
+  },
   {
     image: DChirs,
     alt: "DC braiding",
     desc: "Web App for a braiding salon, which includes a booking page and an admin dashboard",
     live_link: "https://dc-braiding.onrender.com/",
     github_link: "https://github.com/Nnenna-udefi/booking-app",
-    language: ["REACTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
+    language: ["NEXTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
   },
   {
     image: HerRise,
@@ -24,7 +33,7 @@ const projectList = [
     desc: "Web interface for a women non-profit organization",
     live_link: "https://herrise-foundation.onrender.com/",
     github_link: "https://github.com/Nnenna-udefi/HerRise",
-    language: ["REACTJS", "TYPESCRIPT", "TAILWINDCSS"],
+    language: ["NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
   {
     image: TellaTrustAdmin,
@@ -140,12 +149,14 @@ function Project() {
                     <li>{lang}</li>
                   ))}
                 </ul>
-                <a href={project.live_link}>
-                  <button className="project-btn">VISIT SITE</button>
-                </a>
-                <a href={project.github_link}>
-                  <button className="project-btn">CODE</button>
-                </a>
+                <div className="link">
+                  <a href={project.live_link}>
+                    <button className="project-btn">VISIT SITE</button>
+                  </a>
+                  <a href={project.github_link}>
+                    <button className="project-btn">CODE</button>
+                  </a>
+                </div>
               </div>
             </div>
             <hr />

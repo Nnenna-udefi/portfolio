@@ -23,8 +23,8 @@ function Services() {
           <img src={Responsive} alt="" />
           <h2>Responsive Web design </h2>
           <p>
-            I Help design Mobile-friendly, worldclass websites that helps scales
-            your bussiness and helps user experience get better.
+            I Help design Mobile-friendly, world class websites that helps
+            scales your business and helps user experience get better.
           </p>
         </div>
         <div className="service-block">
