@@ -31,7 +31,7 @@ const projectList = [
     image: HerRise,
     alt: "HerRise Foundation",
     desc: "Web interface for a women non-profit organization",
-    live_link: "https://herrise-foundation.onrender.com/",
+    live_link: "https://herrise-foundation.netlify.app/",
     github_link: "https://github.com/Nnenna-udefi/HerRise",
     language: ["NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
