@@ -9,8 +9,17 @@ import Bookishreads from "../images/bookrishread_home.png";
 import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
 import Bookable from "../images/BookableSTR.png";
+import Grovia from "../images/Grovia-lp.png";
 
 const projectList = [
+  {
+    image: Grovia,
+    alt: "Grovia",
+    desc: "Grovia creates brand systems that help accelerate business growth",
+    live_link: "https://grovia-n.vercel.app/",
+    github_link: "https://github.com/Nnenna-udefi/grovia",
+    language: ["NEXTJS", "REACTJS", "TYPESCRIPT", "TAILWINDCSS"],
+  },
   {
     image: Bookable,
     alt: "BookableStr",
