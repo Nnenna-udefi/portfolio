@@ -78,7 +78,6 @@ const projectList = [
     github_link: "https://github.com/RehkMansa/house_of_accent",
     language: ["REACTJS", "NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
-
   {
     image: Easycare,
     alt: "easycare hero",
