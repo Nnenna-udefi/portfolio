@@ -10,8 +10,16 @@ import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
 import Bookable from "../images/BookableSTR.png";
 import Grovia from "../images/Grovia-lp.png";
-
+import Labwise from "../images/labwiseai.png";
 const projectList = [
+  {
+    image: Labwise,
+    alt: "Labwise",
+    desc: "LabWise AI is your personal medical chatbot, providing clear, concise answers to your questions about laboratory tests.",
+    live_link: "https://labwise-ai.vercel.app/",
+    github_link: "https://github.com/Nnenna-udefi/labwise-ai",
+    language: ["NEXTJS", "SUPABASE", "TYPESCRIPT", "TAILWINDCSS, GEMINI AI"],
+  },
   {
     image: Grovia,
     alt: "Grovia",
