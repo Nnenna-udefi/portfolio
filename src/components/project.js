@@ -6,7 +6,7 @@ import HouseOfAccent from "../images/Home-House-of-Ascent.png";
 import TellaTrustAdmin from "../images/TellaTrust.png";
 import Easycare from "../images/easycare.jpg";
 import Bookishreads from "../images/bookrishread_home.png";
-import DChirs from "../images/DCHAIR.png";
+// import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
 import Bookable from "../images/BookableSTR.png";
 import Grovia from "../images/Grovia-lp.png";
@@ -36,14 +36,14 @@ const projectList = [
     github_link: "https://github.com/bookablestr/bookableSTR",
     language: ["NEXTJS", "REACTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
-  {
-    image: DChirs,
-    alt: "DC braiding",
-    desc: "Web App for a braiding salon, which includes a booking page and an admin dashboard",
-    live_link: "https://dc-braiding.onrender.com/",
-    github_link: "https://github.com/Nnenna-udefi/booking-app",
-    language: ["NEXTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
-  },
+  // {
+  //   image: DChirs,
+  //   alt: "DC braiding",
+  //   desc: "Web App for a braiding salon, which includes a booking page and an admin dashboard",
+  //   live_link: "https://dc-braiding.onrender.com/",
+  //   github_link: "https://github.com/Nnenna-udefi/booking-app",
+  //   language: ["NEXTJS", "NODE", "MONGODB", "TYPESCRIPT", "TAILWINDCSS"],
+  // },
   {
     image: HerRise,
     alt: "HerRise Foundation",
