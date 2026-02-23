@@ -166,10 +166,14 @@ function Project() {
                   ))}
                 </ul>
                 <div className="link">
-                  <a href={project.live_link}>
+                  <a href={project.live_link} target="_blank" rel="noreferrer">
                     <button className="project-btn">VISIT SITE</button>
                   </a>
-                  <a href={project.github_link}>
+                  <a
+                    href={project.github_link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="project-btn">CODE</button>
                   </a>
                 </div>
