@@ -82,8 +82,8 @@ const projectList = [
     image: HouseOfAccent,
     alt: "houseofaccent hero",
     desc: "A web app that empowers individuals to achieve personal growth",
-    live_link: "https://house-of-accent.vercel.app/",
-    github_link: "https://github.com/RehkMansa/house_of_accent",
+    live_link: "https://houseofaccent.vercel.app/",
+    github_link: "https://github.com/Nnenna-udefi/houseofaccent",
     language: ["REACTJS", "NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
   {
