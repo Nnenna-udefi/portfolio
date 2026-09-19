@@ -4,14 +4,24 @@ import { BaseModal } from "./baseModal";
 import Todo from "../images/Todo-List.png";
 import HouseOfAccent from "../images/Home-House-of-Ascent.png";
 import TellaTrustAdmin from "../images/TellaTrust.png";
-import Easycare from "../images/easycare.jpg";
+// import Easycare from "../images/easycare.jpg";
 import Bookishreads from "../images/bookrishread_home.png";
 // import DChirs from "../images/DCHAIR.png";
 import HerRise from "../images/herRise.png";
 import Bookable from "../images/BookableSTR.png";
 import Grovia from "../images/Grovia-lp.png";
 import Labwise from "../images/labwiseai.png";
+import SerapheBeauty from "../images/seraphebeauty.png";
+
 const projectList = [
+  {
+    image: SerapheBeauty,
+    alt: "Seraphe",
+    desc: "Seraphe Beauty, a full-featured beauty e-commerce platform with product management, reviews, authentication, and an admin dashboard.",
+    live_link: "https:/seraphebeauty.org/",
+    github_link: "https://github.com/Seraphe-beauty/Seraphe-beauty",
+    language: ["NEXTJS", "SUPABASE", "TYPESCRIPT", "TAILWINDCSS"],
+  },
   {
     image: Labwise,
     alt: "Labwise",
@@ -86,14 +96,14 @@ const projectList = [
     github_link: "https://github.com/Nnenna-udefi/houseofaccent",
     language: ["REACTJS", "NEXTJS", "TYPESCRIPT", "TAILWINDCSS"],
   },
-  {
-    image: Easycare,
-    alt: "easycare hero",
-    desc: "A web app that connects care givers to people especially the elderly who needs their services. It was a 6-page project I worked on with a team.",
-    live_link: "https://easycare-n.vercel.app/",
-    github_link: "https://github.com/Nnenna-udefi/easy-care.git",
-    language: ["HTML", "CSS", "JAVASCRIPT"],
-  },
+  // {
+  //   image: Easycare,
+  //   alt: "easycare hero",
+  //   desc: "A web app that connects care givers to people especially the elderly who needs their services. It was a 6-page project I worked on with a team.",
+  //   live_link: "https://easycare-n.vercel.app/",
+  //   github_link: "https://github.com/Nnenna-udefi/easy-care.git",
+  //   language: ["HTML", "CSS", "JAVASCRIPT"],
+  // },
 ];
 
 function Project() {
