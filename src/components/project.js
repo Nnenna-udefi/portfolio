@@ -18,7 +18,7 @@ const projectList = [
     image: SerapheBeauty,
     alt: "Seraphe",
     desc: "Seraphe Beauty, a full-featured beauty e-commerce platform with product management, reviews, authentication, and an admin dashboard.",
-    live_link: "https:/seraphebeauty.org/",
+    live_link: "https://seraphebeauty.org/",
     github_link: "https://github.com/Seraphe-beauty/Seraphe-beauty",
     language: ["NEXTJS", "SUPABASE", "TYPESCRIPT", "TAILWINDCSS"],
   },
